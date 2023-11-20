@@ -13,7 +13,7 @@ const[textvalue,settextvalue]=useState("");
 
 useEffect(()=>{
   foodsetdata(data.restaurants);
-},[])
+})
 // console.log(fooddata);
 useEffect(()=>{
     
@@ -28,7 +28,7 @@ useEffect(()=>{
   }
 
 
-},[textvalue])
+},[textvalue,fooddata])
 console.log(filterdata)
   console.log("it is working")
 
